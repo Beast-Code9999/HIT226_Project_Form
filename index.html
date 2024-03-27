@@ -37,52 +37,52 @@
                     <input type="text"
                            id="recipe-name"
                            name="recipe-name" 
-                           placeholder="Username*"
+                           placeholder="Recipe name*"
                            required="required"
-                           minlength="4"
+                           minlength="2"
                            class="form__input">
                 </div>
-                <div class="form__section margin-bottom-small" id="username-container">
+                <div class="form__section margin-bottom-small" id="description-container">
                     <label for="description"  class="form__label">
                         Short description
                     </label>
-                    <input type="text"
-                           id="description"
-                           name="full-name" 
-                           placeholder="Username*"
-                           required="required"
-                           minlength="4"
-                           class="form__input">
+                    <textarea name="description" id="description" cols="30" rows="10" placeholder="Give a short description about the recipe"></textarea>
                 </div>
                 <div class="form__section margin-bottom-small" id="username-container">
-                    <label for="username"  class="form__label">
+                    <label for="ingredients"  class="form__label">
                         Ingredients
                     </label>
                     <input type="text"
-                           id="username"
-                           name="full-name" 
-                           placeholder="Username*"
+                           id="ingredients"
+                           name="ingredients" 
+                           placeholder="ingredients*"
                            required="required"
                            minlength="4"
                            class="form__input">
                 </div>
                 <div class="form__section margin-bottom-small" id="-container">
-                    <label for=""  class="form__label">
-                        Instruction:
+                    <label for="instruction"  class="form__label">
+                        Instruction
                     </label>
-                    <textarea name="instruction" maxlength="9000" rows="8" cols="30">The cat was playing in the garden.</textarea>
+                    <textarea name="instruction" maxlength="9000" rows="8" cols="30" placeholder="Write doen the instruction to prepare and/or cook this meal"></textarea>
                 </div>
                 <div class="form__section margin-bottom-small" id="-container">
                     <label for=""  class="form__label">
-                        Cooking time:
+                        Cooking time
                     </label>
+                    <input type="text"
+                           id="cooking-time"
+                           required="required"
+                           placeholder="Enter time in minutes: e.g. 120 minutes for two hours"
+                           pattern="/^\d+$/"
+                           title="please enter numbers in digits">
                 </div>
 
                 <div class="form__section margin-bottom-small" id="username-container">
-                    <label for="username"  class="form__label">
+                    <label for="meal-type"  class="form__label">
                         Type of meal
                     </label>
-                    <input list="meal-type">
+                    <input list="meal-type" placeholder="e.g. breakfast">
                     <datalist id="meal-type">
                       <option value="Breakfast">
                       <option value="Brunch">
@@ -112,7 +112,7 @@
                     id="submit"
                     name="submit"
                     value="submit"
-                    class="form__submit">
+                    class="form__submit button">
                 
             </form>
         </section>

@@ -20,15 +20,12 @@ html {
 }
 body {
     box-sizing: border-box;
-    background-color: var(--white-color);
-
+    background-color: var(--primary-color);
     
     position: relative;
+    font-family: "Edu NSW ACT Foundation", cursive;
 }
 
-body {
-    background-color: var(--primary-color);
-}
 
 .margin-bottom-small {
     margin-bottom: 2rem;
@@ -39,9 +36,7 @@ body {
 .margin-bottom-big {
     margin-bottom: 4rem;
 }
-.heading--1 {
 
-}
 .heading--2 {
     font-size: 2.5rem;
 }
@@ -86,7 +81,6 @@ body {
 }
 
 .section__heading {
-    font-family: "Edu NSW ACT Foundation", cursive;
     text-align: center;
 }
 
@@ -94,6 +88,22 @@ body {
     width: 100%;
     height: 85%;
 }
+
+
+.form__section {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+label {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+
+
 
 /* add scrolling effect for overflowing content */
 .scroll {
@@ -112,4 +122,36 @@ body {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); 
     background-color: #fcb69f;
+}
+
+
+
+
+/* buttons */
+.button {
+    background-color: var(--color-secondary);
+    padding: 1.5rem 4rem;
+    border: none;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+.button:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+
+/* inputs */
+input,
+textarea {
+    background-color: var(--color-grey);
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    border: 2px solid transparent;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid var(--color-secondary);
 }
