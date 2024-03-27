@@ -4,10 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap" rel="stylesheet">
     <script src="./script.js" defer></script>
     <title>Recipes Addition Form</title>
 </head>
 <body>
-    
+    <header class="header">
+        
+    </header>
+
+    <main class="main">
+<!-- Recipe Name -->
+<!-- Short Descriptiton -->
+<!-- Ingredients -->
+<!-- Instruction -->
+<!-- Cooking time -->
+<!-- Dinner breakfast lunch -->
+<!-- Difficulty -->
+
+<!-- Image upload -->
+        <section class="section section--form">
+            <h2 class="section__heading heading--2">
+                Add your own recipe!
+            </h2>
+            <form action="#" method="get" class="form scroll">
+                <div class="form__section margin-bottom-small" id="recipe-name-container">
+                    <label for="recipe-name"  class="form__label">
+                        Recipe name
+                    </label>
+                    <input type="text"
+                           id="recipe-name"
+                           name="recipe-name" 
+                           placeholder="Username*"
+                           required="required"
+                           minlength="4"
+                           class="form__input">
+                </div>
+                <div class="form__section margin-bottom-small" id="username-container">
+                    <label for="description"  class="form__label">
+                        Short description
+                    </label>
+                    <input type="text"
+                           id="description"
+                           name="full-name" 
+                           placeholder="Username*"
+                           required="required"
+                           minlength="4"
+                           class="form__input">
+                </div>
+                <div class="form__section margin-bottom-small" id="username-container">
+                    <label for="username"  class="form__label">
+                        Ingredients
+                    </label>
+                    <input type="text"
+                           id="username"
+                           name="full-name" 
+                           placeholder="Username*"
+                           required="required"
+                           minlength="4"
+                           class="form__input">
+                </div>
+                <div class="form__section margin-bottom-small" id="-container">
+                    <label for=""  class="form__label">
+                        Instruction:
+                    </label>
+                    <textarea name="instruction" maxlength="9000" rows="8" cols="30">The cat was playing in the garden.</textarea>
+                </div>
+                <div class="form__section margin-bottom-small" id="-container">
+                    <label for=""  class="form__label">
+                        Cooking time:
+                    </label>
+                </div>
+
+                <div class="form__section margin-bottom-small" id="username-container">
+                    <label for="username"  class="form__label">
+                        Type of meal
+                    </label>
+                    <input list="meal-type">
+                    <datalist id="meal-type">
+                      <option value="Breakfast">
+                      <option value="Brunch">
+                      <option value="Lunch">
+                      <option value="Dinner">
+                      <option value="Dessert">
+                    </datalist>
+                </div>
+
+
+                <input type="submit"
+                    id="submit"
+                    name="submit"
+                    value="submit"
+                    class="form__submit">
+                
+            </form>
+        </section>
+        <section class="section section--img">
+
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+
+    </footer>
 </body>
 </html>

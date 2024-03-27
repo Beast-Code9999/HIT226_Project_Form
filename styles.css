@@ -1,0 +1,115 @@
+:root {
+    --color-primary: #ffecd2;
+    --color-secondary: #fcb69f;
+    --color-dark-blue: #4d5c76;
+    --color-grey: #f1f3f9;
+}
+
+/* Boilerplate CSS start */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: inherit;
+}
+html {
+    font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    box-sizing: border-box;
+    background-color: var(--white-color);
+
+    
+    position: relative;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+.margin-bottom-small {
+    margin-bottom: 2rem;
+}
+.margin-bottom-medium {
+    margin-bottom: 2rem;
+}
+.margin-bottom-big {
+    margin-bottom: 4rem;
+}
+.heading--1 {
+
+}
+.heading--2 {
+    font-size: 2.5rem;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+
+    background-color: var(--color-primary);
+    position: relative;
+
+
+}
+.section {
+    position: absolute; 
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    border-radius: 1rem;
+}
+.section--form {
+    width: 33%;
+    height: 55rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -50%);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    background-color: white;
+    z-index: 1;
+}
+.section--img {
+    width: 65%;
+    height: 40rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: var(--color-secondary);
+    z-index: 0;
+}
+
+.section__heading {
+    font-family: "Edu NSW ACT Foundation", cursive;
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+    height: 85%;
+}
+
+/* add scrolling effect for overflowing content */
+.scroll {
+    overflow: auto;
+}
+.scroll::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+.scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); 
+    border-radius: 10px;
+}
+ 
+.scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); 
+    background-color: #fcb69f;
+}
