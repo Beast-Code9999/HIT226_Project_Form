@@ -37,7 +37,7 @@
                     <input type="text"
                            id="recipe-name"
                            name="recipe-name" 
-                           placeholder="Recipe name*"
+                           placeholder="Recipe name"
                            required="required"
                            minlength="2"
                            class="form__input">
@@ -59,24 +59,9 @@
                            required="required"
                            minlength="4"
                            class="form__input margin-bottom-small">
-<!-- 
-                    <div class="form__section__div margin-bottom-small">
+
+                    <!-- <div class="form__section__div margin-bottom-small">
                         <input type="text" placeholder="Ingredient 2">
-                        <a href="#" class="remove" id="remove">Remove</a>
-                    </div>  
-                    
-                    <div class="form__section__div margin-bottom-small">
-                        <input type="text">
-                        <a href="#" class="remove" id="remove">Remove</a>
-                    </div>  
-                    
-                    <div class="form__section__div margin-bottom-small">
-                        <input type="text" >
-                        <a href="#" class="remove" id="remove">Remove</a>
-                    </div>  
-                    
-                    <div class="form__section__div margin-bottom-small">
-                        <input type="text">
                         <a href="#" class="remove" id="remove">Remove</a>
                     </div>   -->
                          
@@ -113,23 +98,38 @@
                       <option value="Dessert">
                     </datalist>
                 </div>
-                <div class="form__section margin-bottom-medium" id="difficulty-container"> 
-                    <p class="form__section__paragraph">Difficulty</p>
-                    <div>
-                        <input type="radio" id="easy" name="difficulty" id="easy" checked>
-                        <label for="easy">Easy</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="medium" name="difficulty" id="medium">
-                        <label for="medium">Medium</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="hard" name="difficulty" id="hard">
-                        <label for="hard">Hard</label>
+                <div class="form__section form__section--difficulty margin-bottom-big" id="difficulty-container"> 
+                    <p class="form__section__paragraph margin-bottom-small">Difficulty</p>
+                    <div class="cards">
+                        <div class="card card--1">
+                            <input type="radio" id="easy" name="difficulty" id="easy" checked>
+                            <label for="easy">Easy
+                                <span>
+                                    <img class="img--chef" src="./img/chef.svg" alt="icon-chef-hat">
+                                </span>
+                            </label>
+                        </div>
+                        <div class="card card--2">
+                            <input type="radio" id="medium" name="difficulty" id="medium">
+                            <label for="medium">Medium
+                                <span>
+                                    <img class="img--chef" src="./img/chef.svg" alt="icon-chef-hat">
+                                    <img class="img--chef" src="./img/chef.svg" alt="icon-chef-hat">
+                                </span>
+                            </label>
+                        </div>
+                        <div class="card card--3">
+                            <input type="radio" id="hard" name="difficulty" id="hard">
+                            <label for="hard">Hard
+                                <span>
+                                    <img class="img--chef" src="./img/chef.svg" alt="icon-chef-hat">
+                                    <img class="img--chef" src="./img/chef.svg" alt="icon-chef-hat">
+                                    <img class="img--chef" src="./img/chef.svg" alt="icon-chef-hat">
+                                </span>
+                            </label>
+                        </div>
                     </div>
                 </div>
-
-
                 <input type="submit"
                     id="submit"
                     name="submit"

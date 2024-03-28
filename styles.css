@@ -122,6 +122,40 @@ body {
     margin-right: 1.2rem;
 }
 
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card input {
+    display: none;
+}
+.card > label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    width: 12rem;
+    border-radius: 1rem;
+    background-color: var(--color-grey);
+    transition: background-color .2s, transform .2s, color .2s;
+}
+.card input:checked + label {
+    background-color: var(--color-dark-blue);
+    color: white;
+    transform: translateY(-.5rem);
+}
+.card input:checked + label img {
+    filter: invert(100%) sepia(0%) saturate(7498%) hue-rotate(179deg) brightness(102%) contrast(102%);
+}
+
+.img--chef {
+    width: 2rem;
+}
+label:hover {
+    cursor: pointer;
+}
 
 /* margin sizings */
 .margin-bottom-small {
@@ -156,9 +190,6 @@ body {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); 
     background-color: #fcb69f;
 }
-
-
-
 
 /* buttons */
 .button {
