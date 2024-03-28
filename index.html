@@ -30,8 +30,8 @@
                 Add your own recipe!
             </h2>
             <form action="#" method="get" class="form scroll">
-                <div class="form__section margin-bottom-small" id="recipe-name-container">
-                    <label for="recipe-name"  class="form__label">
+                <div class="form__section margin-bottom-medium" id="recipe-name-container">
+                    <label for="recipe-name"  class="form__label margin-bottom-small">
                         Recipe name
                     </label>
                     <input type="text"
@@ -42,14 +42,14 @@
                            minlength="2"
                            class="form__input">
                 </div>
-                <div class="form__section margin-bottom-small" id="description-container">
-                    <label for="description"  class="form__label">
+                <div class="form__section margin-bottom-medium" id="description-container">
+                    <label for="description"  class="form__label margin-bottom-small">
                         Short description
                     </label>
                     <textarea name="description" id="description" cols="30" rows="10" placeholder="Give a short description about the recipe"></textarea>
                 </div>
-                <div class="form__section margin-bottom-small" id="ingredients-container">
-                    <label for="ingredients"  class="form__label">
+                <div class="form__section margin-bottom-medium" id="ingredients-container">
+                    <label for="ingredients"  class="form__label margin-bottom-small">
                         Ingredients
                     </label>
                     <input type="text"
@@ -58,18 +58,22 @@
                            placeholder="ingredients*"
                            required="required"
                            minlength="4"
-                           class="form__input">
+                           class="form__input margin-bottom-small">
 
-                    <a href="#">Add more ingredients</a>
+                    <div class="form__section__div margin-bottom-small">
+                        <input type="text">
+                        <a href="#" class="remove">Remove</a>
+                    </div>       
+                    <a href="#" class="add">Add more</a>
                 </div>
-                <div class="form__section margin-bottom-small" id="instruction-container">
-                    <label for="instruction"  class="form__label">
+                <div class="form__section margin-bottom-medium" id="instruction-container">
+                    <label for="instruction"  class="form__label margin-bottom-small">
                         Instruction
                     </label>
                     <textarea name="instruction" maxlength="9000" rows="8" cols="30" placeholder="Write doen the instruction to prepare and/or cook this meal"></textarea>
                 </div>
-                <div class="form__section margin-bottom-small" id="cooking-time-container">
-                    <label for=""  class="form__label">
+                <div class="form__section margin-bottom-medium" id="cooking-time-container">
+                    <label for=""  class="form__label margin-bottom-small">
                         Cooking time
                     </label>
                     <input type="text"
@@ -80,8 +84,8 @@
                            title="please enter numbers in digits">
                 </div>
 
-                <div class="form__section margin-bottom-small" id="type-meal-container">
-                    <label for="meal-type"  class="form__label">
+                <div class="form__section margin-bottom-medium" id="type-meal-container">
+                    <label for="meal-type"  class="form__label margin-bottom-small">
                         Type of meal
                     </label>
                     <input list="meal-type" placeholder="e.g. breakfast">
@@ -93,8 +97,8 @@
                       <option value="Dessert">
                     </datalist>
                 </div>
-                <div class="form__section margin-bottom-small" id="difficulty-container"> 
-                    <p>Difficulty:</p>
+                <div class="form__section margin-bottom-medium" id="difficulty-container"> 
+                    <p class="form__section__paragraph">Difficulty:</p>
                     <div>
                         <input type="radio" id="easy" name="difficulty" id="easy" checked>
                         <label for="easy">Easy</label>
@@ -119,7 +123,12 @@
             </form>
         </section>
         <section class="section section--img">
+            <div>
 
+            </div>
+            <div>
+
+            </div>
         </section>
 
 

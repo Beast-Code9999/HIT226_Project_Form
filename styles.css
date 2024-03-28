@@ -26,21 +26,6 @@ body {
     font-family: "Edu NSW ACT Foundation", cursive;
 }
 
-
-.margin-bottom-small {
-    margin-bottom: 2rem;
-}
-.margin-bottom-medium {
-    margin-bottom: 2rem;
-}
-.margin-bottom-big {
-    margin-bottom: 4rem;
-}
-
-.heading--2 {
-    font-size: 2.5rem;
-}
-
 .main {
     width: 100%;
     height: 100vh;
@@ -89,21 +74,55 @@ body {
     height: 85%;
 }
 
-
 .form__section {
     display: flex;
     flex-direction: column;
 }
-
-
-
-label {
+.form__section__paragraph {
     font-size: 2rem;
-    font-weight: 400;
+}
+.form__section__div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form__section__div > input {
+    width: 75%;
+}   
+.form__section__div > a {
+    
+}
+
+.add,
+.remove {
+    text-decoration: none;
+    color: black;
+    padding: 1rem 2rem;
+    background-color: lightcoral;
+    border-radius: 1rem;
+    width: 8rem;
+    text-align: center;
+}
+.remove {
+    margin-right: 2rem;
 }
 
 
-
+/* margin sizings */
+.margin-bottom-small {
+    margin-bottom: 1rem;
+}
+.margin-bottom-medium {
+    margin-bottom: 2rem;
+}
+.margin-bottom-big {
+    margin-bottom: 4rem;
+}
+/* heading sizing */
+.heading--2 {
+    font-size: 2.5rem;
+}
 
 /* add scrolling effect for overflowing content */
 .scroll {
@@ -139,7 +158,10 @@ label {
     cursor: pointer;
     filter: brightness(1.1);
 }
-
+/* label */
+label {
+    font-size: 2rem;
+}
 /* inputs */
 input,
 textarea {
@@ -148,8 +170,8 @@ textarea {
     border-radius: 1rem;
     padding: 1rem 2rem;
     border: 2px solid transparent;
+    font-size: 1.6rem;
 }
-
 input:focus,
 textarea:focus {
     outline: none;
