@@ -48,7 +48,7 @@ const Ingredients = (function Ingredients() {
 })()
 
 // validate input values
-const validateElem = (function validateElem() {
+const ValidateElem = (function ValidateElem() {
     function getElemById(id) {
         return document.getElementById(id);
     }
@@ -78,5 +78,5 @@ const validateElem = (function validateElem() {
 
 window.addEventListener('load', function() {
     Ingredients.init();
-    validateElem.init()
+    ValidateElem.init()
 });
