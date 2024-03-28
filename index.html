@@ -48,7 +48,7 @@
                     </label>
                     <textarea name="description" id="description" cols="30" rows="10" placeholder="Give a short description about the recipe"></textarea>
                 </div>
-                <div class="form__section margin-bottom-small" id="username-container">
+                <div class="form__section margin-bottom-small" id="ingredients-container">
                     <label for="ingredients"  class="form__label">
                         Ingredients
                     </label>
@@ -59,14 +59,16 @@
                            required="required"
                            minlength="4"
                            class="form__input">
+
+                    <a href="#">Add more ingredients</a>
                 </div>
-                <div class="form__section margin-bottom-small" id="-container">
+                <div class="form__section margin-bottom-small" id="instruction-container">
                     <label for="instruction"  class="form__label">
                         Instruction
                     </label>
                     <textarea name="instruction" maxlength="9000" rows="8" cols="30" placeholder="Write doen the instruction to prepare and/or cook this meal"></textarea>
                 </div>
-                <div class="form__section margin-bottom-small" id="-container">
+                <div class="form__section margin-bottom-small" id="cooking-time-container">
                     <label for=""  class="form__label">
                         Cooking time
                     </label>
@@ -78,7 +80,7 @@
                            title="please enter numbers in digits">
                 </div>
 
-                <div class="form__section margin-bottom-small" id="username-container">
+                <div class="form__section margin-bottom-small" id="type-meal-container">
                     <label for="meal-type"  class="form__label">
                         Type of meal
                     </label>
@@ -91,7 +93,7 @@
                       <option value="Dessert">
                     </datalist>
                 </div>
-                <div class="form__section margin-bottom-small" id="-container"> 
+                <div class="form__section margin-bottom-small" id="difficulty-container"> 
                     <p>Difficulty:</p>
                     <div>
                         <input type="radio" id="easy" name="difficulty" id="easy" checked>
