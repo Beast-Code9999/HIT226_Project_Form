@@ -1,7 +1,5 @@
 'user strict';
-// Darkmode
-// Validation
-// autofill
+
 function getElemById(id) {
     return document.getElementById(id);
 }
@@ -106,7 +104,6 @@ const DropImg = (function DropImg() {
         init: init,
     };
 })();
-
 
 window.addEventListener('load', function() {
     Ingredients.init();
