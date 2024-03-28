@@ -109,6 +109,10 @@ body {
     border-radius: 1rem;
     width: 9rem;
     text-align: center;
+    font-size: 1.6rem;
+}
+.add {
+    width: 12rem;
 }
 .add:hover,
 .remove:hover {
@@ -170,7 +174,7 @@ body {
 }
 /* label */
 label {
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 /* inputs */
 input,
@@ -180,7 +184,7 @@ textarea {
     border-radius: 1rem;
     padding: 1rem 2rem;
     border: 2px solid transparent;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 input:focus,
 textarea:focus {
