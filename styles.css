@@ -77,10 +77,12 @@ body {
 .form__section {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .form__section__paragraph {
     font-size: 2rem;
 }
+
 .form__section__div {
     width: 100%;
     display: flex;
@@ -93,19 +95,27 @@ body {
 .form__section__div > a {
     
 }
+.form__section__add {
+    position: absolute;
+    bottom: -4rem;
+}
 
 .add,
 .remove {
     text-decoration: none;
     color: black;
     padding: 1rem 2rem;
-    background-color: lightcoral;
+    background-color: var(--color-secondary);
     border-radius: 1rem;
-    width: 8rem;
+    width: 9rem;
     text-align: center;
 }
+.add:hover,
+.remove:hover {
+    filter: brightness(1.1);
+}
 .remove {
-    margin-right: 2rem;
+    margin-right: 1.2rem;
 }
 
 
@@ -117,7 +127,7 @@ body {
     margin-bottom: 2rem;
 }
 .margin-bottom-big {
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
 }
 /* heading sizing */
 .heading--2 {

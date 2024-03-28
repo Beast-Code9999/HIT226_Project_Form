@@ -48,7 +48,7 @@
                     </label>
                     <textarea name="description" id="description" cols="30" rows="10" placeholder="Give a short description about the recipe"></textarea>
                 </div>
-                <div class="form__section margin-bottom-medium" id="ingredients-container">
+                <div class="form__section margin-bottom-big" id="ingredients-container">
                     <label for="ingredients"  class="form__label margin-bottom-small">
                         Ingredients
                     </label>
@@ -62,9 +62,24 @@
 
                     <div class="form__section__div margin-bottom-small">
                         <input type="text">
-                        <a href="#" class="remove">Remove</a>
+                        <a href="#" class="remove" id="remove">Remove</a>
+                    </div>  
+                    
+                    <div class="form__section__div margin-bottom-small">
+                        <input type="text">
+                        <a href="#" class="remove" id="remove">Remove</a>
+                    </div>  
+                    
+                    <div class="form__section__div margin-bottom-small">
+                        <input type="text">
+                        <a href="#" class="remove" id="remove">Remove</a>
+                    </div>  
+                    
+                    <div class="form__section__div margin-bottom-small">
+                        <input type="text">
+                        <a href="#" class="remove" id="remove">Remove</a>
                     </div>       
-                    <a href="#" class="add">Add more</a>
+                    <a href="#" class="form__section__add add" id="add">Add more</a>
                 </div>
                 <div class="form__section margin-bottom-medium" id="instruction-container">
                     <label for="instruction"  class="form__label margin-bottom-small">
@@ -98,7 +113,7 @@
                     </datalist>
                 </div>
                 <div class="form__section margin-bottom-medium" id="difficulty-container"> 
-                    <p class="form__section__paragraph">Difficulty:</p>
+                    <p class="form__section__paragraph">Difficulty</p>
                     <div>
                         <input type="radio" id="easy" name="difficulty" id="easy" checked>
                         <label for="easy">Easy</label>
