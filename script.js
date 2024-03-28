@@ -2,13 +2,12 @@
 // Darkmode
 // Validation
 // autofill
+function getElemById(id) {
+    return document.getElementById(id);
+}
 
 // Add ingredients
 const Ingredients = (function Ingredients() {
-    function getElemById(id) {
-        return document.getElementById(id);
-    }
-
     _ingredientNum = 1;
     const _container = getElemById('ingredients-container');
     
@@ -49,10 +48,6 @@ const Ingredients = (function Ingredients() {
 
 // validate input values
 const ValidateElem = (function ValidateElem() {
-    function getElemById(id) {
-        return document.getElementById(id);
-    }
-
     _inputCookingTime = getElemById("cooking-time") 
 
     const _checkValidity = function _checkValidity(input, regex) {
@@ -76,7 +71,45 @@ const ValidateElem = (function ValidateElem() {
 })();
 
 
+const DropImg = (function DropImg() {
+    const _dropArea = getElemById("drop-area");
+    const _inputImg = getElemById("input-img");
+    const _imgView = getElemById("img-view");
+    
+    const _updateImg = function updateImg() {
+        _inputImg.addEventListener("change", ()=> {
+            let imgLink = URL.createObjectURL(_inputImg.files[0]);
+            _imgView.style.backgroundImage = `url(${imgLink})`;
+            _imgView.textContent = "";
+            _imgView.style.border = "none"
+        })
+
+        _dropArea.addEventListener("dragover", (event)=> {
+            event.preventDefault();
+        })
+
+        _dropArea.addEventListener("drop", (event)=> {
+            event.preventDefault();
+            _inputImg.files = event.dataTransfer.files;
+            let imgLink = URL.createObjectURL(_inputImg.files[0]);
+            _imgView.style.backgroundImage = `url(${imgLink})`;
+            _imgView.textContent = "";
+            _imgView.style.border = "none"
+        })
+    }
+
+    const init = function init() {
+       _updateImg();
+    };
+
+    return {
+        init: init,
+    };
+})();
+
+
 window.addEventListener('load', function() {
     Ingredients.init();
-    ValidateElem.init()
+    ValidateElem.init();
+    DropImg.init();
 });
