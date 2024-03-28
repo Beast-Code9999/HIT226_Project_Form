@@ -1,9 +1,7 @@
 'user strict';
-
 // Darkmode
 // Validation
 // autofill
-
 
 // Add ingredients
 const Ingredients = (function Ingredients() {
@@ -49,11 +47,23 @@ const Ingredients = (function Ingredients() {
     };
 })()
 
-// validate 
+// validate input values
 const validateElem = (function validateElem() {
+    function getElemById(id) {
+        return document.getElementById(id);
+    }
+
+    _inputCookingTime = getElemById("cooking-time") 
+
+    const _checkValidity = function _checkValidity(input, regex) {
+        input.addEventListener("input", ()=> {
+            input.value = input.value.replace(regex, "")
+        })
+    } 
     
     const _updateInput = function updateInput() {
-
+        _checkValidity(_inputCookingTime, /\D/g)
+        // many more input can be validated if needed by using _checkValidity function
     }
     
     const init = function init() {
@@ -68,4 +78,5 @@ const validateElem = (function validateElem() {
 
 window.addEventListener('load', function() {
     Ingredients.init();
+    validateElem.init()
 });
