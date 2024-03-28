@@ -12,10 +12,6 @@ const Ingredients = (function Ingredients() {
     }
 
     _ingredientNum = 1;
-
-    function getElemById(id) {
-		return document.getElementById(id);
-	}
     const _container = getElemById('ingredients-container');
     
     const _addDiv = function _addDiv() {
@@ -24,7 +20,7 @@ const Ingredients = (function Ingredients() {
             _ingredientNum++;
             let div = document.createElement("div");
             div.classList.add('form__section__div', 'margin-bottom-small')
-            div.innerHTML = `<input type="text" placeholder="Ingredient ${_ingredientNum}"> <a href="#" class="remove" id="remove">Remove</a>`
+            div.innerHTML = `<input type="text" placeholder="Ingredient ${_ingredientNum}" required> <a href="#" class="remove" id="remove">Remove</a>`
             _container.appendChild(div)
         })
     };
@@ -39,21 +35,35 @@ const Ingredients = (function Ingredients() {
         })
     }  
 
-    
-    const updateContainer = function updateContainer() {
+    const _updateContainer = function updateContainer() {
         _addDiv()
         _removeDiv()
     };
 
     const init = function init() {
-        updateContainer();
+        _updateContainer();
     };
 
     return {
         init: init,
     };
-
 })()
+
+// validate 
+const validateElem = (function validateElem() {
+    
+    const _updateInput = function updateInput() {
+
+    }
+    
+    const init = function init() {
+        _updateInput();
+    };
+
+    return {
+        init: init,
+    };
+})();
 
 
 window.addEventListener('load', function() {

@@ -32,7 +32,7 @@
             <form action="" method="get" class="form scroll">
                 <div class="form__section margin-bottom-medium" id="recipe-name-container">
                     <label for="recipe-name"  class="form__label margin-bottom-small">
-                        Recipe name
+                        Recipe name:
                     </label>
                     <input type="text"
                            id="recipe-name"
@@ -44,20 +44,19 @@
                 </div>
                 <div class="form__section margin-bottom-medium" id="description-container">
                     <label for="description"  class="form__label margin-bottom-small">
-                        Short description
+                        Short description:
                     </label>
                     <textarea name="description" id="description" rows="4" placeholder="Give a short description about the recipe"></textarea>
                 </div>
                 <div class="form__section margin-bottom-big" id="ingredients-container">
                     <label for="ingredients"  class="form__label margin-bottom-small">
-                        Ingredients
+                        Ingredients:
                     </label>
                     <input type="text"
                            id="ingredients"
                            name="ingredients" 
                            placeholder="ingredient 1"
                            required="required"
-                           minlength="4"
                            class="form__input margin-bottom-small">
 
                     <!-- <div class="form__section__div margin-bottom-small">
@@ -69,20 +68,20 @@
                 </div>
                 <div class="form__section margin-bottom-medium" id="instruction-container">
                     <label for="instruction"  class="form__label margin-bottom-small">
-                        Instruction
+                        Instruction:
                     </label>
                     <textarea name="instruction" maxlength="9000" rows="8"  placeholder="Write doen the instruction to prepare and/or cook this meal"></textarea>
                 </div>
                 <div class="form__section margin-bottom-medium" id="cooking-time-container">
                     <label for=""  class="form__label margin-bottom-small">
-                        Cooking time
+                        Cooking time:
                     </label>
                     <input type="text"
                            id="cooking-time"
                            required="required"
                            placeholder="Enter time in minutes: e.g. 120 minutes for two hours"
-                           pattern="/^\d+$/"
-                           title="please enter numbers in digits">
+                           pattern="^0*[1-9]\d*$"
+                           title="please enter whole numbers only">
                 </div>
 
                 <div class="form__section margin-bottom-medium" id="type-meal-container">
@@ -99,7 +98,7 @@
                     </datalist>
                 </div>
                 <div class="form__section form__section--difficulty margin-bottom-big" id="difficulty-container"> 
-                    <p class="form__section__paragraph margin-bottom-small">Difficulty</p>
+                    <p class="form__section__paragraph margin-bottom-small">Difficulty:</p>
                     <div class="cards">
                         <div class="card card--1">
                             <input type="radio" id="easy" name="difficulty" id="easy" checked>
